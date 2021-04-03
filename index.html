@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylephone.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Mobile design</title>
+</head>
+<body>
+    <div class="mobile">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="screen">
+            <img src="./phonewallpaper.jpg">
+            <!-- <h2>18:15<br><span>02 Abril 2021</span></h2> -->
+            <ul> <!--apps -->
+                <li><a href="https://voice.google.com/u/0/about"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.whatsapp.com"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://photos.google.com/"><i class="fa fa-file-image-o" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.google.com"><i class="fa fa-chrome" aria-hidden="true"></i></a></li>   
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </script>
+     <script type="text/javascript">
+        $(document).ready(function(){
+            $('.bottom').click(function(){
+                $('.screen').toggleClass('active')
+            })
+        }) </script>
+</body>
+</html>
